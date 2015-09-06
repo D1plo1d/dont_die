@@ -1,0 +1,39 @@
+@keyframes level2
+  from
+    -webkit-filter invert(0%)
+  to
+    -webkit-filter invert(100%)
+
+
+@keyframes level3
+  from
+    -webkit-filter blur(0px) hue-rotate(0deg) invert(0%)
+  to
+    -webkit-filter blur(5px) hue-rotate(360deg) invert(100%)
+
+@keyframes level4
+  from
+    -webkit-filter blur(0px) hue-rotate(0deg) invert(0%)
+    transform rotateZ(0deg) scale(1)
+  to
+    -webkit-filter blur(5px) hue-rotate(360deg) invert(100%)
+    transform rotateZ(360deg) scale(1.5)
+
+#game_container
+  margin-left auto
+  margin-right auto
+  width 800px
+  height 600px
+  position relative
+  animation-iteration-count infinite
+  animation-direction alternate
+  animation-duration 4s
+
+.level2
+  animation-name level2
+
+.level3
+  animation-name level3
+
+.level4
+  animation-name level4
